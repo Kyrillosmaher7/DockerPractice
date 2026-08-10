@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Visitors
+</title>
+
+</head>
+
+
+<body>
+
+
+<h1>
+Arrival List
+</h1>
+
+
+<table border="1">
+
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Arrival Time</th>
+
+</tr>
+
+
+
+{% for visitor in visitors %}
+
+<tr>
+
+<td>
+{{ visitor.id }}
+</td>
+
+
+<td>
+{{ visitor.name }}
+</td>
+
+
+<td>
+{{ visitor.arrival_time }}
+</td>
+
+
+</tr>
+
+
+{% endfor %}
+
+
+</table>
+
+
+<br>
+
+
+<a href="/">
+Add Visitor
+</a>
+
+
+</body>
+
+</html>
